@@ -16,7 +16,7 @@ namespace Agencija_Back.Controllers
         [HttpGet]
         public IActionResult GetPSPUrl()
         {
-            return Ok(new { link = "http://localhost:4200/payment-way" });
+            return Ok(new { link = "http://localhost:3001/home" });
         }
     }
 }
