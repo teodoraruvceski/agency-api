@@ -18,5 +18,12 @@ namespace Agencija_Back.Controllers
         {
             return Ok(new { link = "http://localhost:3001/home" });
         }
+        [HttpPost]
+        [Route("/paid-registration")]
+        public IActionResult PaidRegistration(string id)
+        {
+            //find company with given id in database and change property 'paid' to true
+            return Ok(new { link = "http://localhost:3001/home" });
+        }
     }
 }
